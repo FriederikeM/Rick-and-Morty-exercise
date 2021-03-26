@@ -10,7 +10,9 @@
   <body>
     <div class="container">
       <header class="header">
-        <img src="/" alt="Rick and Morty logo" class="header__img" />
+        <div class="img-container">
+          <img src="/" alt="Rick and Morty logo" class="header__img" />
+        </div>
         <div class="search">
           <select class="header__filter" name="status" id="status">
             <option value="all" selected>All</option>
@@ -25,9 +27,11 @@
             id="search-input"
           />
         </div>
-        <button type="submit" class="header__search-button">
-          Fetch characters
-        </button>
+        <div class="button-container">
+          <button type="submit" class="header__search-button">
+            Fetch characters
+          </button>
+        </div>
       </header>
       <main class="main"></main>
       <footer class="footer"></footer>
