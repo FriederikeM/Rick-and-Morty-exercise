@@ -1,3 +1,7 @@
 :root {
-  /* Define your variable colors here */
+  --color-background: #eeeeee;
+  --color-primary: #132743;
+  --color-secondary: #407088;
+  --color-accent: #ffcbcb;
+  --color-header-footer: #70adb5;
 }

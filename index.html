@@ -8,10 +8,33 @@
     <title>Vite App</title>
   </head>
   <body>
-    <header>
-      <h1>Hello World</h1>
-    </header>
-    <div id="app"></div>
+    <div class="container">
+      <header class="header">
+        <img
+          src="./src/logo.png"
+          alt="Rick and Morty logo"
+          clas="header__img"
+        />
+        <div class="search">
+          <select class="header__filter" name="status" id="status">
+            <option value="all" selected>All</option>
+            <option value="alive">Alive</option>
+            <option value="dead">Dead</option>
+            <option value="unknown">Unknown</option>
+          </select>
+          <input
+            type="search"
+            class="header__search-form"
+            placeholder="Search for a character"
+          />
+        </div>
+        <button type="button" class="header__search-button">
+          Fetch characters
+        </button>
+      </header>
+      <main class="main"></main>
+      <footer class="footer">Hello from the footer</footer>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
