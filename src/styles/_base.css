@@ -14,10 +14,9 @@ html {
 .container {
   display: grid;
   grid-template-rows: [header] 80px [content] auto [footer] 130px;
-  min-width: 320px;
-  max-width: 60vw;
   height: 100vh;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .header {
@@ -81,10 +80,13 @@ html {
   grid-row: [content];
   background-color: var(--color-background);
   color: var(--color-primary);
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   overflow-y: scroll;
   box-shadow: inset 1px 1px 13px 0px rgba(50, 50, 50, 0.68);
   scrollbar-width: thin;
+  padding: 5px;
 }
 
 .footer {
@@ -106,16 +108,9 @@ html {
   box-shadow: inset 1px -12px 50px 8px rgba(0, 0, 0, 0.61);
   align-items: center;
   padding: 1em;
-  margin: 5px 5px 5px 15px;
+  margin: 5px 5px 5px 10px;
   border-radius: 10px;
-}
-
-.character:nth-child(1) {
-  margin-top: 10px;
-}
-
-.character:nth-last-of-type() {
-  background-color: red;
+  width: 355px;
 }
 
 .character h1 {
@@ -127,4 +122,5 @@ html {
 .character img {
   border-radius: 50%;
   max-height: 100px;
+  margin-left: 5px;
 }
