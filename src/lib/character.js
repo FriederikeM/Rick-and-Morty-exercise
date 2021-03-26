@@ -3,16 +3,18 @@ export function createCharacter() {
   const filterDropdown = document.querySelector(".header__filter");
   const type = filterDropdown.value;
 
+  const search = document.querySelector(".header__search-form");
+  const searchInput = search.value;
+
   if (type === "alive") {
-    url = "https://rickandmortyapi.com/api/character/?status=alive";
+    url = `https://rickandmortyapi.com/api/character/?name=${searchInput}&status=alive`;
   } else if (type === "dead") {
-    url = "https://rickandmortyapi.com/api/character/?status=dead";
+    url = `https://rickandmortyapi.com/api/character/?name=${searchInput}&status=dead`;
   } else if (type === "unknown") {
-    url = "https://rickandmortyapi.com/api/character/?status=unknown";
+    url = `https://rickandmortyapi.com/api/character/?name=${searchInput}&status=unknown`;
   } else if (type === "all") {
-    url = "https://rickandmortyapi.com/api/character/";
+    url = `https://rickandmortyapi.com/api/character/?name=${searchInput}`;
   }
-  console.log(url);
 
   fetch(url)
     .then((response) => {

@@ -103,8 +103,8 @@ html {
   box-shadow: inset 1px -12px 50px 8px rgba(0, 0, 0, 0.61);
   align-items: center;
   padding: 1em;
-  margin: 10px;
-  border-radius: 5px;
+  margin: 5px 5px 5px 20px;
+  border-radius: 10px;
 }
 
 .character h1 {
