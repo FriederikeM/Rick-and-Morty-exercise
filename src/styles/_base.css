@@ -23,7 +23,7 @@ html {
   background-color: var(--color-header-footer);
   color: var(--color-primary);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   grid-row: [header];
   padding: 0 20px;

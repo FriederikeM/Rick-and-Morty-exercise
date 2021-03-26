@@ -1,12 +1,15 @@
 export function buildSection(character) {
   const section = document.createElement("section");
   section.classList.add("character");
+
   const main = document.querySelector("main");
-  const fullName = document.createElement("h2");
-  fullName.textContent = `${character.name}`;
-  const img = document.createElement("img");
-  img.src = character.image;
-  img.alt = `${character.name}`;
+
+  const fullNameH2 = document.createElement("h2");
+  fullNameH2.textContent = character.name;
+
+  const characterImg = document.createElement("img");
+  characterImg.src = character.image;
+  characterImg.alt = character.name;
 
   if (character.status === "Alive") {
     section.style.background = "var(--color-primary)";
@@ -16,7 +19,7 @@ export function buildSection(character) {
     section.style.background = "var(--color-secondary)";
   }
 
-  section.append(fullName);
-  section.append(img);
+  section.append(fullNameH2);
+  section.append(characterImg);
   main.append(section);
 }
