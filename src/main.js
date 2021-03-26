@@ -14,13 +14,3 @@ function clearCharacters() {
 }
 
 logoSetup();
-
-//submit form when 'Enter' key is pressed while in myInputID
-document
-  .getElementById("search-input")
-  .addEventListener("keyup", function (event) {
-    if (event.keyCode === 13) {
-      document.getElementById("search-input").submit();
-      return false;
-    }
-  });
