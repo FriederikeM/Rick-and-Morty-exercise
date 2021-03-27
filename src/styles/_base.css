@@ -38,9 +38,10 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 0 25px;
+  margin: 0 15px;
   flex-grow: 1;
   max-width: 500px;
+  width: 100px;
 }
 
 .header__filter {
