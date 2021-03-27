@@ -7,3 +7,12 @@ fetchButton.addEventListener("click", () => {
   clearCharacters();
   createCharacter();
 });
+
+const form = document.querySelector("form");
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  clearCharacters();
+  createCharacter();
+  form.reset();
+});

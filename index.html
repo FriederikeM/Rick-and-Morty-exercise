@@ -17,7 +17,7 @@
             class="header__img"
           />
         </div>
-        <div class="search">
+        <form class="search">
           <select class="header__filter" name="status" id="status">
             <option value="all" selected>All</option>
             <option value="alive">Alive</option>
@@ -30,11 +30,13 @@
             placeholder="Search for a character"
             id="search-input"
           />
-        </div>
+        </form>
         <div class="button-container">
-          <button type="submit" class="header__search-button">
-            Fetch characters
-          </button>
+          <input
+            type="submit"
+            value="Fetch characters"
+            class="header__search-button"
+          />
         </div>
       </header>
       <main class="main"></main>
