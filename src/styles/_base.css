@@ -13,7 +13,7 @@ html {
 
 .container {
   display: grid;
-  grid-template-rows: [header] 90px [content] auto [footer] 130px;
+  grid-template-rows: [header] 90px [content] auto [footer] 80px;
   height: 100vh;
   margin: 0 auto;
   overflow-x: hidden;
@@ -30,7 +30,7 @@ html {
 }
 
 .header__img {
-  width: 60px;
+  width: 70px;
   border-radius: 50%;
 }
 
