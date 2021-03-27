@@ -14,5 +14,4 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   clearCharacters();
   createCharacter();
-  form.reset();
 });
