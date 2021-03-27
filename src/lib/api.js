@@ -22,16 +22,17 @@ export function createCharacter() {
 
 function getUrlFrom(type) {
   let url;
+  const baseUrl = "https://rickandmortyapi.com/api/character/";
   const search = document.querySelector(".header__search-form");
   const searchInput = search.value;
   if (type === "alive") {
-    url = `https://rickandmortyapi.com/api/character/?name=${searchInput}&status=alive`;
+    url = `${baseUrl}?name=${searchInput}&status=alive`;
   } else if (type === "dead") {
-    url = `https://rickandmortyapi.com/api/character/?name=${searchInput}&status=dead`;
+    url = `${baseUrl}?name=${searchInput}&status=dead`;
   } else if (type === "unknown") {
-    url = `https://rickandmortyapi.com/api/character/?name=${searchInput}&status=unknown`;
+    url = `${baseUrl}?name=${searchInput}&status=unknown`;
   } else if (type === "all") {
-    url = `https://rickandmortyapi.com/api/character/?name=${searchInput}`;
+    url = `${baseUrl}?name=${searchInput}`;
   }
   return url;
 }
