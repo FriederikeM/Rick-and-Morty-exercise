@@ -1,10 +1,9 @@
 .character {
   display: flex;
   justify-content: space-between;
-  box-shadow: inset 1px -12px 50px 8px rgba(0, 0, 0, 0.61);
   align-items: center;
   padding: 1em;
-  margin: 5px 5px 5px 10px;
+  margin: 15px 10px 5px 10px;
   border-radius: 10px;
   width: 355px;
 }
@@ -36,6 +35,9 @@
 .character-alive {
   background-color: var(--color-primary);
   color: var(--color-background);
+  box-shadow: inset -6px -12px 30px rgba(6, 13, 22, 0.849),
+    inset 6px 12px 40px rgba(68, 144, 243, 0.424),
+    0px 22px 25px -10px rgba(0, 0, 0, 0.84);
 }
 
 .character-alive-shadow {
@@ -48,6 +50,9 @@
 .character-dead {
   background-color: var(--color-accent);
   color: var(--color-primary);
+  box-shadow: inset -6px -12px 30px 8px rgba(200, 137, 137, 0.9),
+    inset 10px 15px 40px rgba(255, 255, 255),
+    0px 22px 25px -10px rgba(0, 0, 0, 0.84);
 }
 
 .character-dead-shadow {
@@ -60,6 +65,9 @@
 .character-unknown {
   background-color: var(--color-secondary);
   color: var(--color-background);
+  box-shadow: inset -6px -12px 30px 8px rgba(32, 53, 80, 0.849),
+    inset 6px 12px 40px rgba(158, 200, 255, 0.753),
+    0px 22px 25px -10px rgba(0, 0, 0, 0.84);
 }
 
 .character-unknown-shadow {
