@@ -25,11 +25,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
+  border-radius: 5px;
 }
 
 .character img {
-  border-radius: 50%;
+  border-radius: 5px;
   max-height: 100px;
 }
 
