@@ -18,11 +18,12 @@ export function buildSection(character) {
   characterImg.alt = character.name;
 
   if (character.status === "Alive") {
-    section.style.background = "var(--color-primary)";
+    section.classList.add("character-alive");
+    imgDiv.classList.add("character-alive");
   } else if (character.status === "Dead") {
-    section.style.background = "var(--color-accent)";
+    section.classList.add("character-dead");
   } else if (character.status === "unknown") {
-    section.style.background = "var(--color-secondary)";
+    section.classList.add("character-unknown");
   }
 
   section.append(nameDiv);

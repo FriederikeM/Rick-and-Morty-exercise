@@ -1,0 +1,53 @@
+.character {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: inset 1px -12px 50px 8px rgba(0, 0, 0, 0.61);
+  align-items: center;
+  padding: 1em;
+  margin: 5px 5px 5px 10px;
+  border-radius: 10px;
+  width: 355px;
+}
+
+.name-wrapper {
+  max-width: 190px;
+}
+
+.character h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+}
+
+.img-wrapper {
+  height: 110px;
+  width: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.5),
+    10px 10px 15px rgba(70, 70, 70, 0.12),
+    inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+    inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+}
+
+.character img {
+  border-radius: 50%;
+  max-height: 100px;
+}
+
+.character-alive {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+}
+
+.character-dead {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+}
+
+.character-unknown {
+  background-color: var(--color-secondary);
+  color: var(--color-background);
+}
