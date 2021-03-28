@@ -10,7 +10,7 @@
 }
 
 .name-wrapper {
-  max-width: 190px;
+  max-width: 210px;
 }
 
 .character h1 {
@@ -26,10 +26,6 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.5),
-    10px 10px 15px rgba(70, 70, 70, 0.12),
-    inset -10px -10px 15px rgba(255, 255, 255, 0.5),
-    inset 10px 10px 15px rgba(70, 70, 70, 0.12);
 }
 
 .character img {
@@ -42,12 +38,33 @@
   color: var(--color-background);
 }
 
+.character-alive-shadow {
+  box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.15),
+    10px 10px 15px rgba(0, 0, 0, 0.9),
+    inset -10px -10px 15px rgba(255, 255, 255, 0.15),
+    inset 10px 10px 15px rgba(0, 0, 0, 0.9);
+}
+
 .character-dead {
   background-color: var(--color-accent);
   color: var(--color-primary);
 }
 
+.character-dead-shadow {
+  box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.5),
+    10px 10px 15px rgba(70, 70, 70, 0.12),
+    inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+    inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+}
+
 .character-unknown {
   background-color: var(--color-secondary);
   color: var(--color-background);
+}
+
+.character-unknown-shadow {
+  box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.15),
+    10px 10px 15px rgba(0, 0, 0, 0.4),
+    inset -10px -10px 15px rgba(255, 255, 255, 0.15),
+    inset 10px 10px 15px rgba(0, 0, 0, 0.4);
 }

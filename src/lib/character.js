@@ -19,11 +19,13 @@ export function buildSection(character) {
 
   if (character.status === "Alive") {
     section.classList.add("character-alive");
-    imgDiv.classList.add("character-alive");
+    imgDiv.classList.add("character-alive-shadow");
   } else if (character.status === "Dead") {
     section.classList.add("character-dead");
+    imgDiv.classList.add("character-dead-shadow");
   } else if (character.status === "unknown") {
     section.classList.add("character-unknown");
+    imgDiv.classList.add("character-unknown-shadow");
   }
 
   section.append(nameDiv);
