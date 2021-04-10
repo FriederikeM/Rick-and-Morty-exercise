@@ -97,7 +97,7 @@ html {
 }
 
 .main {
-  grid-row: [content];
+  grid-row: content;
   background-color: var(--color-background);
   color: var(--color-primary);
   display: flex;
@@ -108,6 +108,13 @@ html {
   scrollbar-width: thin;
   padding: 5px;
   scroll-margin-block: 50px;
+}
+
+.main::after {
+  content: "";
+  display: block;
+  height: 10px;
+  width: 100%;
 }
 
 .footer {
