@@ -8,6 +8,13 @@ fetchButton.addEventListener("click", () => {
   createCharacter();
 });
 
+const dropDown = document.querySelector(".header__filter");
+
+dropDown.addEventListener("change", () => {
+  clearCharacters();
+  createCharacter();
+});
+
 const form = document.querySelector("form");
 
 form.addEventListener("submit", (event) => {
